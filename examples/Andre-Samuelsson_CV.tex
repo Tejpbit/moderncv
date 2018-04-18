@@ -1,0 +1,170 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[utf8]{inputenc}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{André}{Samuelsson}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Marklandsgatan 53}{414 77}{Göteborg}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+46~762~50~30~30}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{andresamuelsson94@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+
+\social[linkedin]{andre.samuelsson}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{tejpbit}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Utbildning}
+\cventry{2013--2018}{Civilingengör Informationsteknik}{Chalmers Tekniska Högskola}{Göteborg}{
+\newline
+Magistersexamen, Computer Systems and Networks Programmet, specialiserad inom säkerhet och distribuerade system. Kandidatexamen i Informationsteknik.
+}{}
+\cventry{2016--2018}{Magisterexamen i Datorvetenskap}{Chalmers Tekniska Högskola}{Göteborg}{Computer Systems and Networks Programmet, specialiserad inom säkerhet och distribuerade system}{}  % Arguments not required can be left empty
+\cventry{2013--2016}{Kandidatexamen i Informationsteknik}{Informationsteknik}{Chalmers}{}{}
+
+\section{Examensarbete}
+
+\cvitem{Titel}{\emph{Bringing order to Chaos - \textit{Clustering in Wireless Sensor Networks}}}
+\cvitem{Handledare}{Professor Olaf Landsiedel}
+\cvitem{Beskrivning}{En undersökning om att applicera klustringstekniker på ett protokoll namngivet \textit{Chaos}. Protokollet hanterar kommunikation för trådlösa sensornätverk. Utmaningar inkluderar att hitta och applicera en passande klustringsteknik. Vidareutveckling av ett projekt i lågnivå C mot en låg-energi \textit{internet of things} plattform. Dataanalys i språket \textit{R}.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Erfarenhet}
+
+\subsection{Yrkesinriktad}
+
+\cventry{2016}{Sommaranställning}{\textsc{Trueflow}}{Göteborg}{}{
+\iffalse
+Företaget jobbar med mötesplatser, som till exempel svenska mässan, för att öka den personliga kontakten med besökare.Jag jobbade med flera applikationer varav två är web-frontend och en är backend. Den första web-applikationen är en landningssida skapad med Angular 2.  Den tillhandahåller djup länkning in i en mobil applikation och har syftet att ge en överblick över exempelvis ett företag. Vidare arbetade jag med ett web-adminverktyg gjord i \textit{React}. Verktyget låter de ansvariga för en mötesplats se hur långt besökare kommit i processen att bli inbjudna eller ha anmält sig för ett evenemang till att faktiskt ha deltagit på det.
+\fi
+Jag jobbade med flera applikationer varav två är web-frontend och en är backend. Den första web-applikationen är en landningssida skapad med Angular 2.  Den tillhandahåller djup länkning in i en mobil applikation och har syftet att ge en överblick över exempelvis ett företag. Vidare arbetade jag med ett web-adminverktyg gjord i \textit{React}. Backend skrevs i golang och jag jobbade med mailutskicks apier.
+\newline{}\newline{}
+Detaljer:
+\begin{itemize}
+\item Kodhantering och granskning genom git och github.
+\item Agil utveckling med daily standup.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2015-2017}{Handledare i introprogrammering}{\textsc{Chalmers}}{Göteborg}{}{Jag lärde ut python för nya elever på IT-programmet två veckor varje år. Jag hjälpte även till med att ta fram nya uppgifter samt leda de nya i sitt lärande.}
+
+%------------------------------------------------
+
+\subsection{Volontär}
+
+\cventry{2016-2017}{StyrIT}{Sektionstyrelsen på IT}{Vice Ordförande}{}{Vice Ordförande ansvarar för att alla kommittéer och föreningar på sektionen kan arbeta sida vid sida. Posten inkluderar även att vara mötesordförande för ordförandemöten där alla sektionens ordföranden från kommittéer och föreningar närvarar. Under min tid introducerade jag \textit{slack} på sektionen för att främja kommunikation. Annat arbete inom styrelsen inkluderar även planering och utförande av sektionsmötet varje kvartal samt situationshantering när sektionsaktiva har svårt att jobba med varandra eller uppvisar dåligt beteende.}
+
+\cventry{2015-2016}{P.R.I.T.}{PR-förening och rustmästeriet Informationsteknik}{Rustmästare}{}{Kommittén arrangerar större arrangemang och ger erfarenhet av att jobba med och för människor. Inkluderar arbete som bartender, planering och utförande av middagssittningar och hantverk för reparation underhåll och utbyggnad av sektionslokalen.}
+
+\cventry{2014--2015}{digIT}{Datorinformationsgruppen Informationsteknik}{Hubbenansvarig}{}{Ansvarig för underhåll av teknisk utrustning i sektionslokalen. Utöver posten innebär digIT väldigt mycket hobbykodning, underhåll av sektionens hemsida och andra tjänster samt serveradministratör.}
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Bedrifter}
+\cvitem{2018}{\textbf{Google Hashcode}, Top 46 i onlinerundan. Finalister i Dublin den 28e April.}
+\cvitem{2016-2017}{\textbf{Säkerhetsspecialisering}, Chalmers och Göteborgs universitet. \newline http://www.cse.chalmers.se/edu/master/secspec/}
+\cvitem{2015 \& 2017}{\textbf{Bästa tekniska lösning}, Cortègen, Chalmers valborgsparad. \newline\small{En utmärkelse för innovation och problemlösning.}}
+%\cvitem{2013}{Bäst i klassen -- Gymnasium}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Datorkompetens}
+
+\cvlistdoubleitem{Linux}{Docker}
+\cvlistdoubleitem{Git}{}
+\cvlistdoubleitem{Java}{JavaScript}
+\cvlistdoubleitem{React}{Golang}
+\cvlistdoubleitem{C}{Python}
+
+
+\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\cvitem{Advanced}{Computer Hardware and Support}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Presentationserfarenhet}
+
+\cvitem{2014,2015}{Git-föreläsning för nya elever på IT-programmet.}
+\cvitem{2017}{Inspirationsföreläsning - Att sitta i en kommitté. \newline \small{En föreläsning om vad man får av att engagera sig i föreningsliv under sin tid som student.}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Svenska}{Modersmål}{}
+\cvitemwithcomment{Engelska}{Avancerad}{}
+\cvitemwithcomment{Franska}{Nybörjare}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\iffalse
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Matlagning}{Musikaler}
+\cvlistdoubleitem{}{}
+\cvlistitem{}
+\fi
+%----------------------------------------------------------------------------------------
+
+\end{document}
